@@ -69,9 +69,9 @@ p = 1645609161064318928404113954059640632017385364828161051386920700930905824564
 def lcm(a, b):
     return a * b // GCD(a, b)
 
-with open('file3_content/file3/Maximus Benitez.pem') as f:
+with open('file3/Maximus Benitez.pem') as f:
     rsa_pub_maximus = RSA.importKey(f.read())
-with open('file3_content/file3/Quinten Curtis.pem') as f:
+with open('file3/Quinten Curtis.pem') as f:
     rsa_pub_quinten = RSA.importKey(f.read())
 
 q_maximus = rsa_pub_maximus.n // p
